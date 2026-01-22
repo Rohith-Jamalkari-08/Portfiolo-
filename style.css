@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap");
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Nike Typography */
+.nike-title {
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 0.85;
+}
+
+/* Custom Cursor */
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+  mix-blend-mode: difference;
+  transition: transform 0.1s ease;
+}
+
+/* Flashlight Mask */
+.mask-container {
+  position: relative;
+  background: #111;
+  overflow: hidden;
+}
+
+.reveal-content {
+  position: absolute;
+  inset: 0;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(0px at 0% 0%);
+}
+
+/* Project Cards */
+.project-card {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Magnetic Area */
+.magnetic-area {
+  display: inline-block;
+  padding: 20px;
+}
